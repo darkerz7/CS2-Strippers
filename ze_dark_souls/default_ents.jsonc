@@ -185,6 +185,22 @@
 			"glowrange": "1000",
 			"spawnflags": "256"
 		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap8_Panel_Glow",
+			"parentname": "[PR#]Trap8_Panel",
+			"origin": "4073.000000 8363.000000 2043.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap8_Panel_143655.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
 		//Glow Illusionary Wall
 		{
 			"classname": "prop_dynamic",
