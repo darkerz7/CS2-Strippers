@@ -1,0 +1,40 @@
+{
+	"modify":
+	[
+	//remove lua scripts
+		{
+			"match":
+			{
+				"targetname": "[PR#]Release_Heal_TR&0000"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetMaxHealth(256)",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "max_health 256",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

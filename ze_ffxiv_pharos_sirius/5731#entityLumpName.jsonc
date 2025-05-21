@@ -1,0 +1,39 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Lightning_WP"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 一名玩家获得了电元素",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Player picked up Lightning",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"modify":
+	[
+	//remove lua scripts
+		{
+			"match":
+			{
+				"targetname": "[PR#]Release_Upgrade_Lightning_TR&0000"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.50)",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 0.48,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.5",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 0.48,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

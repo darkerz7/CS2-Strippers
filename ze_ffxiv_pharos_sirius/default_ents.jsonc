@@ -1,0 +1,1947 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Nuke_Case"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnCase01",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 【保镖】讨伐成功？",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase02",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 【暴君】讨伐成功！",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase03",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 【罗波那】讨伐成功！",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase04",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 【罗波那 - 極】讨伐成功！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnCase01",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > 【Guard】 Crusade successful?",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase02",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > [Tyrant] Success!",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase03",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > [Ravana] Success!",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnCase04",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > [Ravana - Extreme] Venom?",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_High_TR_05"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 与罗波那的战斗将在40秒后开始",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The battle with Ravana will begin in 40 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Final"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 你无法跳过最高的刀光！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > You can't jump over the highest laser!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_Parry"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 你能看穿这个体势？！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Parry Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_Parry"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 你能看穿这个体势？！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Parry Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_Chandrahas"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 做好觉悟！",
+						"delay": 3.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 武学真髓！",
+						"delay": 6.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Prepare <<<",
+						"delay": 3.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Chandrahas Attack <<<",
+						"delay": 6.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Ice"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 冰元素已被升级 !",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Ice has been upgraded!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_RoseOfHate"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 咆哮吧，我的斗气！",
+						"delay": 15.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Rose Of Hate Attack <<<",
+						"delay": 15.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Heal"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 奶元素已被升级 !",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Heal has been upgraded!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_PillarsOfHeaven"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 守势如土！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Pillars Of Heaven Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_Butterfly"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 展翅飞舞！兵魂之蝶！",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Butterfly Attack <<<",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_Butterfly"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 展翅飞舞！兵魂之蝶！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Butterfly Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Boss_Relay"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 手雷可以造成更高伤害",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Grenades can cause higher damage",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_PreludeToSlaughter"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 攻势如火！",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 起始于“序”！",
+						"delay": 10.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Prelude To Slaughter Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Start with “Sequence”",
+						"delay": 10.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_Offence"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 攻势如火！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Offensive like fire <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_Low_TR_04"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 最后的栅栏门将于30秒后打开",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The last gate will open in 30 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The last gate will close in 15 sec.",
+						"delay": 30.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Stage3_End_Detect_ZM"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 检测到入侵者！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Zombie inside!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Stage1_End_Detect_ZM"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 检测到入侵者！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Zombie inside!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_Shield"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 武神之甲！",
+						"delay": 8.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say say >>> Armor of the God of War <<<",
+						"delay": 8.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Fire"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 火元素已被升级 !",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Fire has been upgraded!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Lightning"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 电元素已被升级 !",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Lightning has been upgraded!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_SwiftSlaughter"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 界临至“急”！",
+						"delay": 10.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> The world is in a state of emergency! Diman incoming! <<<",
+						"delay": 10.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Relay_Slaughter"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 经流至“破”！",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Slaughter Attack <<<",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_Liberation"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 经流至“破”！",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Liberation <<<",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Start"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 罗波那处于进攻姿态时免疫手雷伤害！",
+						"delay": 1.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Ravana is immune to grenade damage while moving!",
+						"delay": 1.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Boss_Yojimbo"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 讨伐目标：保镖",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Level: Guard",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Boss_Tyrant"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 讨伐目标：暴君",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Level: Tyrant",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Boss_Ravana"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 讨伐目标：罗波那",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Level: Ravana",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Boss_Ravana_Extreme"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 讨伐目标：罗波那 - 極",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Level: Ravana - Extreme",
+						"delay": 5.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Extreme_Relay_PreludeToLiberation"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 起始于“序”！",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Prelude To Liberation Attack <<<",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_Attack_Parry_Anim"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这就是后发制人！",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say >>> Parry Anim Attack <<<",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_Low_TR_03"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道屏障将于20秒后解除",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The barrier will be removed in 20 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_High_TR_02"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道屏障将于25秒后解除",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The barrier will be removed in 25 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_High_TR_04"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道屏障将于30秒后解除",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The barrier will be removed in 30 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_High_TR_03"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道屏障将于35秒后解除",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The barrier will be removed in 35 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_High_TR_01"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道屏障将于40秒后解除",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The barrier will be removed in 40 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_Start_TR"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道栅栏门将于30秒后打开",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The gates will open in 30 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_Low_TR_01"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道门将于25秒后打开",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The door will open in 25 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Defense_Low_TR_02"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 这道门将于25秒后打开",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The door will open in 25 sec.",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_LimitBreak_CT"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnHitMax",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 黑元素已升级成极限突破 !",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnHitMax",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Gravity has Limit Break!",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Gravity"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 黑元素已被升级 !",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Gravity has been upgraded!",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+//remove lua scripts start
+		{
+			"match":
+			{
+				"targetname": "[PR#]Release_Upgrade_Heal_TR"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetMaxHealth(256)",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "max_health 256",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Heal"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetMaxHealth(256)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "max_health 256",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Fire"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Ice"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Gravity"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Upgrade_Lightning"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnTrigger",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]Ravana_TR_Freeze"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 13.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 13.00,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		{
+			"match":
+			{
+				"targetname": "[PR#]ResetSpeed"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerOutZone",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerOutZone",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+//remove lua scripts end
+		{
+			"match":
+			{
+				"targetname": "[PR#]Server"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > 最终幻想14：天狼星灯塔",
+						"delay": 1.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > 地图和模型：史克威尔",
+						"delay": 2.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > 其他：天笠",
+						"delay": 3.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > Final(Dark) Fantasy XIV: Pharos Sirius",
+						"delay": 1.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > Maps and models: Square Enix",
+						"delay": 2.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > Other: 天笠",
+						"delay": 3.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "Command",
+						"overrideparam": "say > Translated and removed lua scripts: DarkerZ [RUS]",
+						"delay": 4.00,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+	]
+}

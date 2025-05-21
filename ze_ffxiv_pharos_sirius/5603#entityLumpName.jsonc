@@ -1,0 +1,39 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Fire_WP"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 一名玩家获得了火元素",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Player picked up Fire",
+						"delay": 0.00,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Magic_Bridge_WP"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 一名玩家学会了星桥魔法",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 在星桥上的玩家不会受到传送魔法影响",
+						"delay": 1.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 星桥可被破坏",
+						"delay": 2.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Zombie picked up Star Bridge",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Players on the Star Bridge are not affected by teleportation magic",
+						"delay": 1.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > The Star Bridge may be destroyed",
+						"delay": 2.00,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+	]
+}

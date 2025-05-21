@@ -1,0 +1,19 @@
+{
+	"modify":
+	[
+	//Glow FakeChest
+		{
+			"match":
+			{
+				"targetname": "[PR#]fakechest_00_model&0000"
+			},
+			"replace":
+			{
+				"glowstate": "3",
+				"glowcolor": "200 0 255 150",
+				"glowteam": "-1",
+				"glowrange": "2000"
+			}
+		}
+	]
+}

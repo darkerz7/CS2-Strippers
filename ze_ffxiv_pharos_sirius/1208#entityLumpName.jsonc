@@ -1,0 +1,136 @@
+{
+	"modify":
+	[
+	//remove lua scripts
+		{
+			"match":
+			{
+				"targetname": "[PR#]Release_Ice_Hurt&0000"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 1.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 2.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 3.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 4.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 5.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 6.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 0.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 1.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 2.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 3.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 4.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 6.0",
+						"delay": 5.00,
+						"timestofire": -1
+					},
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "friction 1.0",
+						"delay": 6.00,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,258 @@
+{
+	"modify":
+	[
+		//Glow FCS button template
+		{
+			"match":
+			{
+				"targetname": "[PR#]FCS"
+			},
+			"insert":
+			{
+				"template04": "[PR#]FCS_Glow_Button"
+			}
+		},
+		//Glow DEO button template
+		{
+			"match":
+			{
+				"targetname": "[PR#]DEO_Temp"
+			},
+			"insert":
+			{
+				"template04": "[PR#]DEO_Glow_Button"
+			}
+		},
+		//Add Illusionary 2 Wall name
+		{
+			"match":
+			{
+				"hammeruniqueid": "143774"
+			},
+			"insert":
+			{
+				"targetname": "[PR#]Illusionary_Wall_2_Button"
+			}
+		},
+		//Add Illusionary 4 Wall name
+		{
+			"match":
+			{
+				"hammeruniqueid": "143855"
+			},
+			"insert":
+			{
+				"targetname": "[PR#]Illusionary_Wall_4_Button"
+			}
+		}
+	],
+	//Remove Default Skins
+	"filter":
+	[
+		{
+			"targetname": "[PR#]Skin_Picker_Default"
+		}
+	],
+	"add": 
+	[
+		//Glow DEO Doll button
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]DEO_Doll_Glow_Button",
+			"parentname": "[PR#]DEO_Doll_Button",
+			"origin": "-4478.000000 -9827.000000 104.000000",
+			"scales": "0.5 0.5 0.5",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "models/blightown/flamelight.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 20 200 150",
+			"glowteam": "-1",
+			"glowrange": "2000",
+			"spawnflags": "256"
+		},
+		//Glow Traps
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap1_Panel_Glow",
+			"parentname": "[PR#]Trap1_Panel",
+			"origin": "4250.000000 3432.000000 665.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap1_Panel_143440.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap2_Panel_Glow",
+			"parentname": "[PR#]Trap2_Panel",
+			"origin": "4627.000000 6912.000000 1387.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap2_Panel_143438.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap3_Panel_Glow",
+			"parentname": "[PR#]Trap3_Panel",
+			"origin": "5496.000000 8208.000000 1707.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap3_Panel_143436.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		//BUG:Without parentname. Dublicate Trap6_Panel* Entity
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap6_Panel_Glow",
+			"origin": "4841.000000 8772.000000 2043.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap6_Panel_143682.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap4_Panel_Glow",
+			"parentname": "[PR#]Trap4_Panel",
+			"origin": "4715.000000 8789.000000 2043.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap4_Panel_143680.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap5_Panel_Glow",
+			"parentname": "[PR#]Trap5_Panel",
+			"origin": "4457.000000 8810.000000 2043.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap5_Panel_143664.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		//BUG:Without parentname. Dublicate Trap6_Panel* Entity
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Trap6_Panel2_Glow",
+			"origin": "2708.010010 6842.000000 2043.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Trap6_Panel_143434.vmdl",
+			"glowstate": "3",
+			"glowcolor": "255 0 0 150",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		//Glow Illusionary Wall
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Illusionary_Wall_1_Button_Glow",
+			"parentname": "[PR#]Illusionary_Wall_1_Button",
+			"origin": "4542.000000 7760.000000 1134.000000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_1_Button_143767.vmdl",
+			"glowstate": "3",
+			"glowcolor": "150 150 150 100",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Illusionary_Wall_2_Button_Glow",
+			"parentname": "[PR#]Illusionary_Wall_2_Button",
+			"origin": "5010.000000 10146.000000 2121.000000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/unnamed_143774.vmdl",
+			"glowstate": "3",
+			"glowcolor": "150 150 150 100",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Illusionary_Wall_3_Button_Glow",
+			"parentname": "[PR#]Illusionary_Wall_3_Button",
+			"origin": "2944.500000 9714.000000 3089.500000",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_3_Button_143891.vmdl",
+			"glowstate": "3",
+			"glowcolor": "150 150 150 100",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		},
+		{
+			"classname": "prop_dynamic",
+			"targetname": "[PR#]Illusionary_Wall_4_Button_Glow",
+			"parentname": "[PR#]Illusionary_Wall_4_Button",
+			//Need: "origin": "3032 3294 -1556",
+			//Diff: +810 -6622 -205
+			//Fixed: "origin": "3842 -3328 -1761",
+			"origin": "3032 3294 -1600",
+			"scales": "1 1 1",
+			"disablerecieveshadows": "0",
+			"rendermode": "1",
+			"renderamt": "1",
+			//Old: "model": "maps/ze_dark_souls/entities/unnamed_143855.vmdl",
+			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_3_Button_143891.vmdl",
+			"glowstate": "3",
+			"glowcolor": "150 150 150 100",
+			"glowteam": "-1",
+			"glowrange": "1000",
+			"spawnflags": "256"
+		}
+	]
+}

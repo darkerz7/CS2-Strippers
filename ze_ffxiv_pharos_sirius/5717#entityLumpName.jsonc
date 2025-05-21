@@ -1,0 +1,55 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Item_Heal_WP"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 一名玩家获得了奶元素",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 奶可以对抗吞噬魔法",
+						"delay": 2.00,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Player picked up Heal",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Heal can resist the Devourer",
+						"delay": 2.00,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+	]
+}

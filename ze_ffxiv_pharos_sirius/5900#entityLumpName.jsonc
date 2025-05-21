@@ -1,0 +1,56 @@
+{
+	"modify":
+	[
+		{
+			"match":
+			{
+				"targetname": "[PR#]Magic_Teleport_WP"
+			},
+			"delete":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Server",
+						"inputname": "Command",
+						"overrideparam": "say > 一名玩家学会了传送魔法",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					//remove lua scripts
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetMaxHealth(100000)",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+			{
+				"io":
+				[
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Server",
+						"inputname": "Command",
+						"overrideparam": "say > Zombie picked up Teleportation magic",
+						"delay": 0.00,
+						"timestofire": 1
+					},
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "KeyValues",
+						"overrideparam": "max_health 100000",
+						"delay": 0.00,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}
