@@ -1,4 +1,5 @@
 FIX:
+*Added a button to the admin room to switch the glow mode
 *Added glow to chests and fakechests
 *Added glow to FCS and DEO buttons
 *Added glow to FMB

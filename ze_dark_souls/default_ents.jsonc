@@ -66,7 +66,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "models/blightown/flamelight.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 20 200 150",
 			"glowteam": "-1",
 			"glowrange": "2000",
@@ -83,7 +83,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap1_Panel_143440.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -99,7 +99,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap2_Panel_143438.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -115,7 +115,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap3_Panel_143436.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -131,7 +131,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap6_Panel_143682.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -147,7 +147,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap4_Panel_143680.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -163,7 +163,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap5_Panel_143664.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -179,7 +179,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap6_Panel_143434.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -195,7 +195,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Trap8_Panel_143655.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "255 0 0 150",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -212,7 +212,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_1_Button_143767.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "150 150 150 100",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -228,7 +228,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/unnamed_143774.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "150 150 150 100",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -244,7 +244,7 @@
 			"rendermode": "1",
 			"renderamt": "1",
 			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_3_Button_143891.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "150 150 150 100",
 			"glowteam": "-1",
 			"glowrange": "1000",
@@ -264,11 +264,224 @@
 			"renderamt": "1",
 			//Old: "model": "maps/ze_dark_souls/entities/unnamed_143855.vmdl",
 			"model": "maps/ze_dark_souls/entities/Illusionary_Wall_3_Button_143891.vmdl",
-			"glowstate": "3",
+			"glowstate": "0",
 			"glowcolor": "150 150 150 100",
 			"glowteam": "-1",
 			"glowrange": "1000",
 			"spawnflags": "256"
+		},
+		//Button to switch
+		{
+			"classname": "func_button",
+			"spawnflags": "17921",
+			"wait": "0.05",
+			"speed": "0",
+			"origin": "-4152 -4160 8",
+			"model": "maps/ze_dark_souls/entities/unnamed_170499.vmdl",
+			"io":
+			[
+				{
+					"outputname": "OnPressed",
+					"targetname": "[PR#]helper_glow_branch",
+					"inputname": "ToggleTest",
+					"overrideparam": "",
+					"delay": 0.00,
+					"timestofire": -1
+				}
+			]
+		},
+		//WorldText
+		{
+			"classname": "point_worldtext",
+			"targetname": "[PR#]helper_glow_text",
+			"origin": "-4152 -4160 60",
+			"angles": "0 270 120",
+			"message": "Helper: Glow\nDisable",
+			"world_units_per_pixel": "0.1",
+			"font_size": "92",
+			"font_size": "92",
+			"justify_vertical": "2",
+			"justify_horizontal": "1",
+			"color": "255 215 0",
+			"renderamt": "255",
+			"enabled": "True"
+		},
+		//Relay
+		{
+			"classname": "logic_relay",
+			"targetname": "[PR#]helper_glow_relay",
+			"startdisabled": "true",
+			"io":
+			[
+				{
+					"outputname": "OnSpawn",
+					"targetname": "[PR#]helper_glow_branch",
+					"inputname": "Test",
+					"overrideparam": "",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnSpawn",
+					"targetname": "!self",
+					"inputname": "Trigger",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]chest_00",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>chest_00_model*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]fakechest_00",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>fakechest_00_model*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]FMB",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>FMB_Model*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]npc",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>npc_model*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]FCS",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>FCS_Glow_Button*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]DEO_Temp",
+					"inputname": "AddOutput",
+					"overrideparam": "OnEntitySpawned>DEO_Glow_Button*>StartGlowing>>0.1>-1",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]DEO_Doll_Glow_Button",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap1_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap2_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap3_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap6_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap4_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap5_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap6_Panel2_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Trap8_Panel_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.10,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Illusionary_Wall_1_Button_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.20,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Illusionary_Wall_2_Button_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.20,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Illusionary_Wall_3_Button_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.20,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrigger",
+					"targetname": "[PR#]Illusionary_Wall_4_Button_Glow",
+					"inputname": "StartGlowing",
+					"overrideparam": "",
+					"delay": 0.20,
+					"timestofire": -1
+				}
+			]
 		}
 	]
 }

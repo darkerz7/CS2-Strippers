@@ -9,7 +9,7 @@
 			},
 			"replace":
 			{
-				"glowstate": "3",
+				"glowstate": "0",
 				"glowcolor": "75 0 130 100",
 				"glowteam": "-1",
 				"glowrange": "2000"

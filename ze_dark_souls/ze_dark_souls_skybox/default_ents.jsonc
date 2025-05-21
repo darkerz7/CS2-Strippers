@@ -1,0 +1,62 @@
+{
+	"add": 
+	[
+		//Helper Glow Branch
+		{
+			"classname": "logic_branch",
+			"targetname": "[PR#]helper_glow_branch",
+			"initialvalue": "0",
+			"io":
+			[
+				{
+					"outputname": "OnTrue",
+					"targetname": "[PR#]cmd",
+					"inputname": "Command",
+					"overrideparam": "say >>> Helper: Glow Enable <<<",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrue",
+					"targetname": "[PR#]helper_glow_text",
+					"inputname": "SetMessage",
+					"overrideparam": "Helper: Glow\nEnable",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnTrue",
+					"targetname": "[PR#]helper_glow_relay",
+					"inputname": "Enable",
+					"overrideparam": "",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnFalse",
+					"targetname": "[PR#]cmd",
+					"inputname": "Command",
+					"overrideparam": "say >>> Helper: Glow Disable <<<",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnFalse",
+					"targetname": "[PR#]helper_glow_text",
+					"inputname": "SetMessage",
+					"overrideparam": "Helper: Glow\nDisable",
+					"delay": 0.00,
+					"timestofire": -1
+				},
+				{
+					"outputname": "OnFalse",
+					"targetname": "[PR#]helper_glow_relay",
+					"inputname": "Disable",
+					"overrideparam": "",
+					"delay": 0.00,
+					"timestofire": -1
+				}
+			]
+		}
+	]
+}
